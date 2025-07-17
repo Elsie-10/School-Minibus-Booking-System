@@ -1,7 +1,5 @@
 from flask import request, jsonify
-from models.route import Route
-from models.bus import Bus
-from models import db
+from models import db, Route, Bus
 
 def create_route():
     data = request.json
